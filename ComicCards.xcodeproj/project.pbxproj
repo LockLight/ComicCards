@@ -19,6 +19,7 @@
 		78CBCC092082654600FBF930 /* CodableResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CBCC082082654600FBF930 /* CodableResponses.swift */; };
 		78CBCC0B20826AFF00FBF930 /* Date+ISO8601.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CBCC0A20826AFF00FBF930 /* Date+ISO8601.swift */; };
 		78CBCC112082937800FBF930 /* ComicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CBCC102082937800FBF930 /* ComicCell.swift */; };
+		CD0676AB210AFB6300F2D300 /* Marvel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0676AA210AFB6300F2D300 /* Marvel.swift */; };
 		D2A5F2091F4A9144005CD714 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2A5F2071F4A9144005CD714 /* Main.storyboard */; };
 		D2A5F20B1F4A9144005CD714 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2A5F20A1F4A9144005CD714 /* Assets.xcassets */; };
 		D2A5F2211F4A96D0005CD714 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A5F2201F4A96D0005CD714 /* AppDelegate.swift */; };
@@ -40,6 +41,7 @@
 		78CBCC082082654600FBF930 /* CodableResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableResponses.swift; sourceTree = "<group>"; };
 		78CBCC0A20826AFF00FBF930 /* Date+ISO8601.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ISO8601.swift"; sourceTree = "<group>"; };
 		78CBCC102082937800FBF930 /* ComicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicCell.swift; sourceTree = "<group>"; };
+		CD0676AA210AFB6300F2D300 /* Marvel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marvel.swift; sourceTree = "<group>"; };
 		D2A5F2001F4A9144005CD714 /* ComicCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComicCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2A5F2081F4A9144005CD714 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D2A5F20A1F4A9144005CD714 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				78CBCC082082654600FBF930 /* CodableResponses.swift */,
+				CD0676AA210AFB6300F2D300 /* Marvel.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				78CBCBFD20823E2700FBF930 /* ComicsViewController.swift in Sources */,
 				7808ECB620888D400042B134 /* UploadResult.swift in Sources */,
 				78CBCC0B20826AFF00FBF930 /* Date+ISO8601.swift in Sources */,
+				CD0676AB210AFB6300F2D300 /* Marvel.swift in Sources */,
 				7808ECB220879FEB0042B134 /* CardViewController.swift in Sources */,
 				78CBCC092082654600FBF930 /* CodableResponses.swift in Sources */,
 				78CBCC0420825A8C00FBF930 /* Comic.swift in Sources */,
