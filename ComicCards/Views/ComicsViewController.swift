@@ -61,11 +61,31 @@ class ComicsViewController: UIViewController {
   @IBOutlet weak private var viewMessage: UIView!
   @IBOutlet weak private var lblMessage: UILabel!
   @IBOutlet weak private var imgMeessage: UIImageView!
+  
+  let provider = MoyaProvider<Marvel>()
 
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    state = .error
+    state = .loading
+    
+    provider.request(.comics) { [weak self] result in
+      guard case self = self else { return }
+      
+      // 3
+      switch result {
+      case .success(let response):
+        do {
+          self?.state = .ready(try response.map(MarvelResponse<Comic>.self).data.results)
+//          print(try response.mapJSON())
+        } catch {
+          self?.state = .error
+        }
+      case .failure:
+        // 5
+        self?.state = .error
+      }
+    }
   }
 }
 
