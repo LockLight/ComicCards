@@ -35,7 +35,7 @@ extension Imgur:TargetType{
   public var task: Task {
     switch self {
     case .upload(let image):
-      let imageData = UIImageJPEGRepresentation(image, 1.0)!
+      let imageData = image.jpegData(compressionQuality: 1.0)!
       
       return .uploadMultipart([MultipartFormData(provider: .data(imageData),
                                                  name: "image",
